@@ -82,5 +82,17 @@ public class Main {
         for (int day = firstFriday; day <= 31; day += 7) {
             System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
         }
+
+        //task 8
+        System.out.println("Task 8");
+        int period = 79;
+        int startSeeing = 0;
+        int start = currentYear - 200;
+        int end = currentYear + 100;
+        for (int year = startSeeing; year < end; year += period) {
+            if (year > start) {
+                System.out.println(year);
+            }
+        }
     }
 }
