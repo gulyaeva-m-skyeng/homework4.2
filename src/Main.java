@@ -3,15 +3,12 @@ public class Main {
 
 //task 1
         System.out.println("Task 1");
-        int desiredSum = 2_459_000;
-        int sum = 0;
-        int amount = 15_000;
-        double percent = 1D / 100;
-        int month = 0;
-        while (sum < desiredSum) {
-            sum += amount;
-            sum = (int) (sum * (1 + percent));
-            month++;
+       int amount = 15_000;
+       int sum = 0;
+       int month = 1;
+       while (sum < 2_459_000) {
+           sum = sum + amount;
+           month = month + 1;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
         }
 
@@ -41,8 +38,8 @@ public class Main {
 
         //task 4
         System.out.println("Task 4");
-        percent = 7D / 100;
-        desiredSum = 12_000_000;
+        double percent = 7D / 100;
+        int desiredSum = 12_000_000;
         sum = amount;
         month = 0;
         while (sum < desiredSum) {
