@@ -27,5 +27,16 @@ public class Main {
             System.out.print(number + " ");
         }
         System.out.println();
+
+        //task 3
+        System.out.println("Task 3");
+        int population = 12_000_000;
+        int fertilityPerThousand = 17;
+        int mortalityPerThousand = 8;
+        int currentYear = 2024;
+        for (int year = currentYear; year < currentYear + 10; year++) {
+            population += population * fertilityPerThousand / 1000 - population * mortalityPerThousand / 1000;
+            System.out.println("Год " + year + ", численность населения составляет " + population);
+        }
     }
 }
