@@ -48,7 +48,7 @@ public class Main {
         while (sum < desiredSum) {
             sum = (int) (sum * (1 + percent));
             month++;
-            System.out.println(" Месяц " + month + ", сумма накоплений равна " + sum + "рублей");
+            System.out.println(" Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
         }
 
         //task 5
@@ -59,8 +59,21 @@ public class Main {
             sum = (int) (sum * (1 + percent));
             month++;
             if (month % 6 == 0) {
-                System.out.println(" Месяц " + month + ", сумма накоплений равна " + sum + "рублей");
+                System.out.println(" Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
             }
         }
+
+        //task 6
+        System.out.println("Task 6");
+        sum = amount;
+        month = 0;
+        int months = 12 * 9;
+        while (month < months) {
+            sum = (int) (sum * (1 + percent));
+            month++;
+            if (month % 6 == 0) {
+                System.out.println(" Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
+            }
+        }
+        }
     }
-}
