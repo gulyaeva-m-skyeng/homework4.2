@@ -50,5 +50,17 @@ public class Main {
             month++;
             System.out.println(" Месяц " + month + ", сумма накоплений равна " + sum + "рублей");
         }
+
+        //task 5
+        System.out.println("Task 5");
+        sum = amount;
+        month = 0;
+        while (sum < desiredSum) {
+            sum = (int) (sum * (1 + percent));
+            month++;
+            if (month % 6 == 0) {
+                System.out.println(" Месяц " + month + ", сумма накоплений равна " + sum + "рублей");
+            }
+        }
     }
-    }
+}
