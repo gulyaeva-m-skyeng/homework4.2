@@ -38,5 +38,17 @@ public class Main {
             population += population * fertilityPerThousand / 1000 - population * mortalityPerThousand / 1000;
             System.out.println("Год " + year + ", численность населения составляет " + population);
         }
+
+        //task 4
+        System.out.println("Task 4");
+        percent = 7D / 100;
+        desiredSum = 12_000_000;
+        sum = amount;
+        month = 0;
+        while (sum < desiredSum) {
+            sum = (int) (sum * (1 + percent));
+            month++;
+            System.out.println(" Месяц " + month + ", сумма накоплений равна " + sum + "рублей");
+        }
     }
-}
+    }
